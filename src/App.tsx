@@ -253,7 +253,7 @@ function App() {
       {/* Technical Speaking Section */}
       <section className="py-16 bg-gray-800/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Technical Speaking Engagements</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Speaking Engagements & Conferences</h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Event 1 */}
