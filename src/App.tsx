@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Blogs from './Blogs';
 import { Bike, Github, Linkedin, Mail, Server, PenTool as Tool, Code, Database, Container, Rocket, GitGraph, Users, Star, GitFork, ArrowRight, Calendar, Sparkles } from 'lucide-react';
 
 interface GitHubRepo {
@@ -52,8 +53,8 @@ function App() {
             <span className="text-teal-400"> Pannaga Perumal</span>
           </h1>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">
-            Full Stack Developer & 
-            <span className="text-teal-400"> Freelancer</span>
+            Full Stack Developer 
+            <span className="text-teal-400"> </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
             Building the future of technology through innovative solutions.
@@ -182,6 +183,9 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Blogs Section */}
+      <Blogs />
 
       {/* GitHub Contributions Section */}
       <section className="py-16">
