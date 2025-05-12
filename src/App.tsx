@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Blogs from './Blogs';
 import { Bike, Github, Linkedin, Mail, Server, PenTool as Tool, Code, Database, Container, Rocket, GitGraph, Users, Star, GitFork, ArrowRight, Calendar, Sparkles } from 'lucide-react';
+import resume from './Pannaga_Resume.pdf';
 
 interface GitHubRepo {
   id: number;
@@ -61,11 +62,15 @@ function App() {
             Experienced in Python Django, Docker, and DevOps.
           </p>
           <div className="flex gap-4">
-            <a href="#contact" className="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-lg font-medium transition-colors">
+            <a href="#contact" className="border border-gray-600 hover:border-teal-500 px-6 py-3 rounded-lg font-medium transition-colors">
               Get in Touch
             </a>
-            <a href="#projects" className="border border-gray-600 hover:border-teal-500 px-6 py-3 rounded-lg font-medium transition-colors">
-              View Projects
+            <a
+              href={resume}
+              download="Pannaga_Resume.pdf"
+              className="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-lg font-medium transition-colors"
+              >
+              Download Resume
             </a>
           </div>
         </div>
@@ -196,8 +201,8 @@ function App() {
               <h2 className="text-3xl font-bold">Open Source Contributions</h2>
             </div>
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700">
-              <img 
-                src={`https://ghchart.rshah.org/teal/Pannagaperumal`}
+              <img
+                src={`https://ghchart.rshah.org/0F4721/Pannagaperumal`}
                 alt="GitHub Contributions"
                 className="w-full rounded-lg"
               />
